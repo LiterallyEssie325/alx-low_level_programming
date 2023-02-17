@@ -6,18 +6,15 @@
  * Return: 0
  *
  */
+
 int main(void)
 {
+	char i;
 
-	char letter = 'a';
-
-	while (letter <= 'z')
-	{
-		putchar(letter);
-		/* we need an increase from a to b */
-		letter++;
-	}
-
-	putchar("\n");
+	for (i = 'a' ; i <= 'z' ; i++)
+		putchar(i);
+	for (i = 'A' ; i <= 'Z' ; i++)
+		putchar(i);
+	putchar('\n');
 	return (0);
 }
