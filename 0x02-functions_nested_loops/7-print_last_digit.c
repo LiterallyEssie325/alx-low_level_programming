@@ -2,17 +2,16 @@
 
 /**
  * print_last_digit -  prints the last digit of a number
- * @n: parameter to be printed
+ * @i: parameter to be printed
  *
  * Return: the last digit
  */
-int print_last_digit(int n)
+int print_last_digit(int i)
 {
-	int x;
+	int k;
 
-	if (n < 0)
-		n = -n;
-	x = n % 10;
-	_putchar(x + '0');
-	return (x);
+	k = i % 10;
+	if (i < 0)
+		k = -k;
+	return (k);
 }
