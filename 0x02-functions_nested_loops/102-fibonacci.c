@@ -2,35 +2,27 @@
 
 /**
  * main - prints first 50 fibonacci numbers, starting from
- * 1 and 2 seperated by a comma and then a space.
+ * 0 and 1 seperated by a comma and then a space.
  * Return: 0
  */
 int main(void)
 {
-	int count = 3;
+	int i = 0;
+	long int a = 0, b = 1, next;
 
-	long int first = 1, second = 2;
-	long int next = first + second;
-
-	printf("%lu, ", first);
-	printf("%lu, ", second);
-
-	while (count <= 50)
+	while (i < 50)
 	{
-		if (count == 50)
-		{
-			printf("%lu \n", next);
-		}
-		else
-		{
-			 printf("%lu, ", next);
-		}
+		next = a + b;
+		a = b;
+		b = next;
+		printf("%lu", next);
 
-		 first = second;
-		 second = next;
-
-		 next = first + second;
-		 count++;
+		if (i < 49)
+		{
+			printf(", ");
+		}
+		i++
 	}
+	putchar('\n');
 	return (0);
 }
