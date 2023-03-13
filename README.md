@@ -1,1 +1,1 @@
-C peogramming software engineering language
+C programming software engineering language
