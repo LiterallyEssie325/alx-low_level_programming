@@ -5,7 +5,7 @@
  * @head: input value
  * @n: input value
  *
- * Return address of the new element otherwise NULL
+ * Return: address of the new element otherwise NULL
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
