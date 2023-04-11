@@ -6,8 +6,8 @@
  *
  * Return: the converted number otherwise, 0 if b is NULL
  */
-
-unsigned int binary_to uint(const char *b)
+i
+unsigned int binary_to_uint(const char *b)
 {
 	int i;
 	unsigned int dec = 0;
