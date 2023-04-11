@@ -6,7 +6,7 @@ char *create_buffer(char *file);
 void close_file(int fd);
 
 /**
- * create_buffer - segrgrates 1024 bytes to a buffer
+ * create_buffer - segregates 1024 bytes to a buffer
  * @file: input value
  *
  * Return: to the new buffer
@@ -39,7 +39,7 @@ void close_file(int fd)
 
 	if (d == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
